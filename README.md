@@ -34,9 +34,6 @@ Demoblaze_API_Testing.postman_collection.json
 Import the environment (optional):
 Demoblaze_API_Env.postman_environment.json
 
-Update baseUrl in environment:
-
-https://demoblaze.com/api
 
 
 Run the collection or individual requests.
