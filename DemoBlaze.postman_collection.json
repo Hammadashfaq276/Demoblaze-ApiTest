@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "f7159b86-1921-42b5-91ea-c09fe59b7a98",
+		"name": "DemoBlaze",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "6040141"
+	},
+	"item": [
+		{
+			"name": "Get All Products",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Sign Up",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"Hammad601\",\r\n  \"password\": \"Hammad@601\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://api.demoblaze.com/signup"
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"Hammad341\",\r\n  \"password\": \"Hammad@341\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://api.demoblaze.com/login"
+			},
+			"response": []
+		},
+		{
+			"name": "Product By Id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://api.demoblaze.com/view"
+			},
+			"response": []
+		},
+		{
+			"name": "Add to cart",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": \"01a3c8b7-9278-f930-3d87-6ba58e4d3cd3\",\r\n  \"cookie\": \"user=33ebb402-8efe-a2b4-accc-25b04322e180\",\r\n  \"flag\": false,\r\n  \"prod_id\": 2\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://api.demoblaze.com/addtocart"
+			},
+			"response": []
+		},
+		{
+			"name": "View Cart",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"cookie\": \"user=33ebb402-8efe-a2b4-accc-25b04322e180\",\r\n  \"flag\": false\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://api.demoblaze.com/viewcart"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Cart",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"cookie\": \"user=33ebb402-8efe-a2b4-accc-25b04322e180\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://api.demoblaze.com/deletecart"
+			},
+			"response": []
+		}
+	]
+}
